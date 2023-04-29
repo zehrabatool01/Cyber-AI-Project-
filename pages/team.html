@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Started -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Cyber AI Club</a>
+        </div>
+        <ul class="links">
+          <li><a href="./homepage.html">Home</a></li>
+          <li>
+            <a href="#" style="color: orange; font-weight: bold">Our Team</a>
+          </li>
+          <li><a href="./events.html">Events</a></li>
+        </ul>
+        <a href="./joinusform.html" class="action_btn">Join Us Now</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="./homepage.html">Home</a></li>
+        <li>
+          <a href="#" style="color: orange; font-weight: bold">Our Team</a>
+        </li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./joinusform.html" class="action_btn">Join Us Now</a></li>
+      </div>
+    </header>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+    <!-- Navbar Ended -->
+
+    <!-- Team Members Start -->
+    <section class="teamheading">
+      <h1 class="sub-heading">Meet Our Team</h1>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="teamsubheading">Our Presidents</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/president.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Muhammad Jawwad</h2>
+            <p>President</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/vicepresident.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Muhammad Umer Amir</h2>
+            <p>Vice-President</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="teamsubheading">Our General Secretary</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/generalsecretary.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Daniyal Jameel</h2>
+            <p>General Secretary</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="teamsubheading">Our Media Heads</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/mediahead1.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Saim Rafi</h2>
+            <p>Media Head</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/mediahead2.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Javeria Ali</h2>
+            <p>Media Head</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="teamsubheading">Our Core Team Members</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/coreteammember1.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Muhammad Ahmed</h2>
+            <p>Core Team Member</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/coreteammember2.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Laiba Wajih</h2>
+            <p>Core Team Member</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="teamsubheading">Our Event Planner</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/eventplanner.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Hirah Siddiqui</h2>
+            <p>Event Planner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="teamsubheading">Our Event Co-ordinators</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/eventcoordinator.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Mir Wali Chandio</h2>
+            <p>Event Coordinator</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/coeventcoordinator.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Fiza Butt</h2>
+            <p>Co-Event Coordinator</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="teamsubheading">Our Web Developers</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/leadwebdeveloper.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Huzefa Mustafa</h2>
+            <p>Lead Web Developer</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/coleadwebdeveloper.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Syeda Zehra Batool</h2>
+            <p>Co-Lead Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="teamsubheading">Our Graphic Designer</h2>
+        <div class="card">
+          <div class="imgBx">
+            <img src="../assets/graphicdesigner.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Syeda Mehak</h2>
+            <p>Lead Graphic Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Members End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div>
+        <h3>About Us</h3>
+        <p>
+          Cyber & AI Club functions to empower students with technological
+          proficiency and leverage their potential in the field of Cyber & Ai,
+          ultimately fostering innovation & progress.
+        </p>
+      </div>
+      <div>
+        <h3>Connect with Us</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091347931622"
+              target="_blank"
+              ><i class="fa-brands fa-facebook fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/cyber_ai_ssuet/" target="_blank"
+              ><i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- <script src="../scripts/team.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- Navbar Started -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Cyber AI Club</a>
+        </div>
+        <ul class="links">
+          <li><a href="#" style="color: orange; font-weight: bold">Home</a></li>
+          <li><a href="./team.html">Our Team</a></li>
+          <li><a href="./events.html">Events</a></li>
+        </ul>
+        <a href="./joinusform.html" class="action_btn">Join Us Now</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="#" style="color: orange; font-weight: bold">Home</a></li>
+        <li><a href="./team.html">Our Team</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./joinusform.html" class="action_btn">Join Us Now</a></li>
+      </div>
+    </header>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+    <!-- Navbar Ended -->
+
+    <!-- Club Heading Start -->
+    <section class="heading">
+      <h1>Welcome to Cyber AI Club</h1>
+      <p>Empowering Minds, Securing Futures</p>
+    </section>
+    <!-- Club Heading End -->
+
+    <!-- Club Upcoming Events Start -->
+    <section id="upcoming-events">
+      <h1 class="sub-heading">Upcoming Events</h1>
+    </section>
+    <!-- Club Upcoming Events End -->
+
+    <!-- Join Us Start -->
+    <section class="joinus">
+      <h2>Want to be a part of US?</h2>
+      <button><a href="./joinusform.html">Join Us Now</a></button>
+    </section>
+    <!-- Join Us End -->
+
+    <!-- Club Vision Start -->
+    <section class="vision">
+      <h1>Our Vision</h1>
+      <p>
+        Our vision is to empower the future generation with knowledge and skills
+        in emerging technologies, specifically cyber and AI, through an
+        inclusive and collaborative platform.
+      </p>
+    </section>
+    <!-- Club Vision End -->
+    <!-- Club Latest Events Start -->
+    <section id="latest-events" class="latesteventhome">
+      <h1 class="sub-heading">Latest News and Events</h1>
+    </section>
+    <!-- Club Latest Events End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div>
+        <h3>About Us</h3>
+        <p>
+          Cyber & AI Club functions to empower students with technological
+          proficiency and leverage their potential in the field of Cyber & Ai,
+          ultimately fostering innovation & progress.
+        </p>
+      </div>
+      <div>
+        <h3>Connect with Us</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091347931622"
+              target="_blank"
+              ><i class="fa-brands fa-facebook fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/cyber_ai_ssuet/" target="_blank"
+              ><i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "50px",
+        duration: 2500,
+        delay: 400,
+      });
+      ScrollReveal().reveal(".heading h1, .joinus h2", {
+        delay: 200,
+        origin: "top",
+      });
+      ScrollReveal().reveal(".heading p, .joinus button", {
+        delay: 300,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".vision h1, .vision p", {
+        delay: 400,
+        origin: "left",
+      });
+      ScrollReveal().reveal(".sub-heading", {
+        delay: 200,
+        origin: "top",
+      });
+    </script>
+    <script src="../scripts/events.js"></script>
+  </body>
+</html>
